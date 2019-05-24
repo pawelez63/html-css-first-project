@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Example of website designed during Software Development Academy">
+	<meta name="keywords" content="html,css,sda,about,me,software,development,academy">
+	<meta name="author" content="Pawel Porebski">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pawel Porebski</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="banner">
+			<div class="bannerTitle">
+				html i css
+			</div>
+			<div class="bannerSubTitle">
+				kurs software development academy
+			</div>
+		</div>
+		<nav>
+			<div class="menu">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="menu">
+				<a href="elementy.html">Elementy</a>
+			</div>
+			<div class="menu">
+				<a class="active" href="formularze.html">Formularze</a>
+			</div>	
+		</nav>
+	</header>
+	<div class="container">
+		<h1 class="mainTitle">Formularz</h1>
+		<div class="content">
+			<div class="full box">
+				<div class="boxContent">
+					<p class="boxHeader">
+						Formularz kontaktowy
+					</p>
+					<form method="post" action="localhost">
+						<div class="formRow">
+							<label for="inputName" class="formLabel">imię:</label>
+							<input type="text" class="formInput" name="firstName" id="inputName">
+						</div>
+						<div class="formRow">
+							<label for="inputLastName" class="formLabel">nazwisko:</label>
+							<input type="text" class="formInput" name="lastName" id="inputLastName">
+						</div>
+						<div class="formRow">
+							<label for="inputEmail" class="formLabel">adres e-mail:</label>
+							<input type="email" class="formInput" name="email" id="inputEmail">
+						</div>
+						<div class="formRow">
+							<label for="inputMessageText" class="formLabel">wiadomość:</label>
+							<textarea rows="7" class="formInput" name="MessageText" id="inputMessageText"></textarea>
+						</div>
+						<div class="formRow">
+							<label for="inputNewsletter" class="formLabel checkbox">chcę otrzymywać newsletter:</label>
+							<input type="checkbox" class="form-checkbox" name="newsletter" id="inputNewsletter">
+						</div>
+						<div class="formRow submit">
+							<button type="submit" class="button button-primary">Wyślij!</button>
+						</div>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>	
+</html>
